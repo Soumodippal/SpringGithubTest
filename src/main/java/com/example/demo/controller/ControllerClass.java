@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class ControllerClass {
-
+	
 	@GetMapping
 	public ResponseEntity<String> testMethod() {
 		return new ResponseEntity<>("Soumodip pal",HttpStatus.OK);
+	}
+	
+	@GetMapping("/secnd")
+	public ResponseEntity<String> testMethod2() {
+		return new ResponseEntity<>("Soumodip pal test method 2",HttpStatus.OK);
 	}
 }
