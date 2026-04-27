@@ -19,4 +19,8 @@ public class ControllerClass {
 	public ResponseEntity<String> testMethod2() {
 		return new ResponseEntity<>("Soumodip pal test method 2",HttpStatus.OK);
 	}
+	@GetMapping("/third")
+	public ResponseEntity<String> testMethod3() {
+		return new ResponseEntity<>("Soumodip pal test method 2",HttpStatus.OK);
+	}
 }
