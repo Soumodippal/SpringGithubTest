@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,5 +19,10 @@ public class ControllerClass {
 	@GetMapping("/secnd")
 	public ResponseEntity<String> testMethod2() {
 		return new ResponseEntity<>("Soumodip pal test method 2",HttpStatus.OK);
+	}
+	
+	@GetMapping("/changes")
+	public ResponseEntity<String> fromAnotherWorkspace(){
+		return new ResponseEntity<String>("This push added from another workspace after clone this file in another folder",HttpStatus.OK);
 	}
 }
